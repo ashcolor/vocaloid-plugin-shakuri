@@ -1,30 +1,26 @@
-VOCALOID3 Job Plugin�ushakuri�v�ł��B
+VOCALOID3 Job Plugin「shakuri」です。
 
-1�A�T�v
-�Ώۃm�[�g�̕ꉹ�Ǝq���𕪊����A�q���̉��������邱�Ƃɂ����
-���Ⴍ���t����v���O�C���ł��B
-����ɂ��A�͋����̏��E���Y�����̌���E�͂�����Ƃ���������
-�������邩������܂���B
+1、概要
+対象ノートの母音と子音を分割し、子音の音を下げることによって
+しゃくりを付けるプラグインです。
+これにより、力強い歌唱・リズム感の向上・はっきりとした発音が
+実現するかもしれません。
 
-2�A����
-���v���O�C���Ɠ��l��Job�v���O�C���̊Ǘ���ʂ�shakuri.lua��ǉ����Ă��������B
+2、準備
+他プラグインと同様にJobプラグインの管理画面にshakuri.luaを追加してください。
 
-3�A�_�C�A���O�ɂ���
-�EStart Time(Tick):���s�͈͂̎n�܂��Tick�P�ʂœ��͂��܂��B
-�EEnd Time(Tick):���s�͈͂̏I����Tick�P�ʂœ��͂��܂��B
-�EMin Duration of Target:�ΏۂƂȂ�m�[�g�̍ŏ��̃f�����[�V������I�����܂��B
-�ELength:���Ⴍ��(�q��)�̒�����I�����܂��B
-�EDepth:���Ⴍ��(�q��)�̉����̉�������I�����܂��B
+3、ダイアログについて
+・Start Time(Tick):実行範囲の始まりをTick単位で入力します。
+・End Time(Tick):実行範囲の終わりをTick単位で入力します。
+・Min Duration of Target:対象となるノートの最小のデュレーションを選択します。
+・Length:しゃくり(子音)の長さを選択します。
+・Depth:しゃくり(子音)の音程の下げ幅を選択します。
 
-4�A�g�p��̒���
-�E�����f�B�[�Ɖ̎���������͂����x�^�ł���Ԃł̎g�p�𐄏����܂��B
-�E���߂͎��̐ݒ�Ŏ����Ă݂�Ƃ�����������܂���B
-�@�@Min Duration of Target:4������
-�@�@Length:32������
-�@�@Depth:����
-�E�����L����"a"�̏ꍇ�A�m�C�Y���̂邱�Ƃ�����悤�ł��B
-  �ꉹ���̐L�΂�"-"��"��"�ɑł��������Ƃŉ��P�ł��܂��B
-
-5�A�A����
-������փ��[�����ǂ����B
-ashcolor27@gmail.com
+4、使用上の注意
+・メロディーと歌詞だけを入力したベタ打ち状態での使用を推奨します。
+・初めは次の設定で試してみるといいかもしれません。
+　　Min Duration of Target:4分音符
+　　Length:32分音符
+　　Depth:半音
+・発音記号が"a"の場合、ノイズがのることがあるようです。
+  母音部の伸ばし"-"を"あ"に打ち直すことで改善できます。
